@@ -1,0 +1,32 @@
+# Виртуальные окружения Python
+.venv/
+venv/
+
+# Кэш и артефакты Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Служебные файлы IDE и ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Локальные секреты
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Локальные базы данных (учебная БД ниже включается явно)
+*.db
+*.sqlite
+*.sqlite3
+!database/requests.db
+
+# Временные файлы
+tmp/
+*.log
