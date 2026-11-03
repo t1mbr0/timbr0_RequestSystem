@@ -1,0 +1,250 @@
+{
+  "queries": [
+    {
+      "id": "Q01",
+      "columns": [
+        "number",
+        "title",
+        "category",
+        "status",
+        "executor"
+      ],
+      "rows": [
+        {
+          "number": "REQ-2026-00002",
+          "title": "Ошибка входа в 1С",
+          "category": "Программное обеспечение",
+          "status": "Новая",
+          "executor": "Не назначен"
+        },
+        {
+          "number": "REQ-2026-00001",
+          "title": "Не работает принтер",
+          "category": "Оборудование",
+          "status": "В работе",
+          "executor": "Иван Петров"
+        },
+        {
+          "number": "REQ-2026-00005",
+          "title": "Предоставить доступ",
+          "category": "Доступ",
+          "status": "В работе",
+          "executor": "Алексей Смирнов"
+        },
+        {
+          "number": "REQ-2026-00003",
+          "title": "Настроить VPN",
+          "category": "Сеть",
+          "status": "Выполнена",
+          "executor": "Алексей Смирнов"
+        },
+        {
+          "number": "REQ-2026-00004",
+          "title": "Заменить клавиатуру",
+          "category": "Оборудование",
+          "status": "Закрыта",
+          "executor": "Иван Петров"
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "columns": [
+        "number",
+        "title",
+        "created_at"
+      ],
+      "rows": [
+        {
+          "number": "REQ-2026-00002",
+          "title": "Ошибка входа в 1С",
+          "created_at": "2026-11-03 10:20:00"
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "columns": [
+        "number",
+        "title",
+        "executor"
+      ],
+      "rows": [
+        {
+          "number": "REQ-2026-00001",
+          "title": "Не работает принтер",
+          "executor": "Иван Петров"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "columns": [
+        "number",
+        "title",
+        "comments_count"
+      ],
+      "rows": [
+        {
+          "number": "REQ-2026-00001",
+          "title": "Не работает принтер",
+          "comments_count": 2
+        },
+        {
+          "number": "REQ-2026-00003",
+          "title": "Настроить VPN",
+          "comments_count": 1
+        },
+        {
+          "number": "REQ-2026-00004",
+          "title": "Заменить клавиатуру",
+          "comments_count": 1
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "columns": [
+        "number",
+        "title"
+      ],
+      "rows": [
+        {
+          "number": "REQ-2026-00001",
+          "title": "Не работает принтер"
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "columns": [
+        "id",
+        "number",
+        "old_status",
+        "new_status",
+        "changed_by",
+        "changed_at"
+      ],
+      "rows": [
+        {
+          "id": 5,
+          "number": "REQ-2026-00004",
+          "old_status": "Выполнена",
+          "new_status": "Закрыта",
+          "changed_by": "Елена Волкова",
+          "changed_at": "2026-11-02 14:00:00"
+        },
+        {
+          "id": 6,
+          "number": "REQ-2026-00005",
+          "old_status": "Новая",
+          "new_status": "В работе",
+          "changed_by": "Ольга Оператор",
+          "changed_at": "2026-11-03 09:00:00"
+        },
+        {
+          "id": 4,
+          "number": "REQ-2026-00003",
+          "old_status": "В работе",
+          "new_status": "Выполнена",
+          "changed_by": "Алексей Смирнов",
+          "changed_at": "2026-11-03 09:30:00"
+        },
+        {
+          "id": 1,
+          "number": "REQ-2026-00001",
+          "old_status": "—",
+          "new_status": "Новая",
+          "changed_by": "Ольга Оператор",
+          "changed_at": "2026-11-03 10:15:00"
+        },
+        {
+          "id": 3,
+          "number": "REQ-2026-00002",
+          "old_status": "—",
+          "new_status": "Новая",
+          "changed_by": "Ольга Оператор",
+          "changed_at": "2026-11-03 10:20:00"
+        },
+        {
+          "id": 2,
+          "number": "REQ-2026-00001",
+          "old_status": "Новая",
+          "new_status": "В работе",
+          "changed_by": "Ольга Оператор",
+          "changed_at": "2026-11-03 10:45:00"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "columns": [
+        "requests_total",
+        "closed_total",
+        "comments_total",
+        "history_total"
+      ],
+      "rows": [
+        {
+          "requests_total": 5,
+          "closed_total": 2,
+          "comments_total": 4,
+          "history_total": 8
+        }
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "operation": "INSERT",
+      "affected_rows": 1
+    },
+    {
+      "operation": "INSERT",
+      "affected_rows": 1
+    },
+    {
+      "operation": "INSERT",
+      "affected_rows": 1
+    },
+    {
+      "operation": "UPDATE",
+      "affected_rows": 1
+    },
+    {
+      "operation": "INSERT",
+      "affected_rows": 1
+    },
+    {
+      "operation": "UPDATE",
+      "affected_rows": 1
+    },
+    {
+      "operation": "INSERT",
+      "affected_rows": 1
+    },
+    {
+      "operation": "DELETE",
+      "affected_rows": 1
+    },
+    {
+      "operation": "DELETE",
+      "affected_rows": 1
+    },
+    {
+      "operation": "DELETE",
+      "affected_rows": 1
+    }
+  ],
+  "integrity": "ok",
+  "foreign_key_errors": [],
+  "counts": {
+    "Roles": 4,
+    "Users": 6,
+    "Statuses": 4,
+    "Categories": 5,
+    "Requests": 5,
+    "Comments": 4,
+    "RequestHistory": 8
+  }
+}
