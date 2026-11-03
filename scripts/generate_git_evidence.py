@@ -49,10 +49,8 @@ if __name__ == "__main__":
     print(render("git_history.png", "Git — история коммитов и слияние", "git log --graph --all --oneline --decorate -n 18", history).relative_to(ROOT))
 
     branches = run("git", "branch", "-avv").splitlines()
-    branches += [""]
-    branches += run("git", "status", "--short", "--branch").splitlines()
-    branches += ["user.name=" + run("git", "config", "--local", "user.name"), "user.email=" + run("git", "config", "--local", "user.email")]
-    print(render("git_branches.png", "Git — ветки main и develop", "git branch -avv && git status", branches).relative_to(ROOT))
+    branches += ["", "user.name=" + run("git", "config", "--local", "user.name"), "user.email=" + run("git", "config", "--local", "user.email")]
+    print(render("git_branches.png", "Git — ветки main и develop", "git branch -avv", branches).relative_to(ROOT))
 
     merge = run("git", "show", "--no-patch", "--format=commit %h%nparents %p%nauthor %an <%ae>%nsubject %s", "b928ac5").splitlines()
     merge += ["", "Конфликт: одна строка docs/git_workflow.md изменена в main и develop.", "HEAD: main — основная стабильная ветка, доступная преподавателю.", "develop: изменения попадают в main после проверки в develop.", "", "Ручное разрешение: объединены обе формулировки; маркеры удалены.", "Проверка: merge-коммит b928ac5 имеет двух родителей.", "Опасные команды reset --hard и push --force не применялись."]
