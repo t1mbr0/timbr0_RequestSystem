@@ -59,4 +59,4 @@ python scripts/verify_database.py
 4. Интерфейс: `docs/ui/prototype.md` и `docs/ui/prototype.pdf`.
 5. База данных: `docs/database/database.md`, SQL-файлы — `database/`.
 
-Удалённый адрес будет добавлен после создания репозитория на GitHub.
+**Публичный репозиторий:** https://github.com/t1mbr0/timbr0_RequestSystem
