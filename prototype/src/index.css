@@ -1,0 +1,80 @@
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/manrope/800.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy-950: oklch(0.22 0.045 250);
+    --navy-900: oklch(0.27 0.05 250);
+    --blue-700: oklch(0.49 0.15 254);
+    --blue-600: oklch(0.55 0.16 254);
+    --blue-100: oklch(0.94 0.035 254);
+    --slate-900: oklch(0.27 0.025 250);
+    --slate-700: oklch(0.42 0.025 250);
+    --slate-600: oklch(0.49 0.02 250);
+    --slate-500: oklch(0.56 0.018 250);
+    --slate-300: oklch(0.86 0.012 250);
+    --slate-200: oklch(0.92 0.009 250);
+    --slate-100: oklch(0.965 0.006 250);
+    --slate-50: oklch(0.982 0.004 250);
+    --paper: oklch(0.995 0.002 250);
+    --green-700: oklch(0.49 0.105 155);
+    --green-100: oklch(0.94 0.045 155);
+    --amber-700: oklch(0.53 0.12 70);
+    --amber-100: oklch(0.95 0.055 85);
+    --red-700: oklch(0.51 0.18 25);
+    --red-100: oklch(0.95 0.035 25);
+
+    --color-accent: var(--blue-600);
+    --color-accent-hover: var(--blue-700);
+    --color-text: var(--slate-900);
+    --color-muted: var(--slate-600);
+    --color-border: var(--slate-200);
+    --color-surface: var(--paper);
+    --color-canvas: var(--slate-50);
+    --control-height: 44px;
+
+    --background: 0 0% 98%;
+    --foreground: 240 10% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 16%;
+    --primary: 243 75% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 20%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 42%;
+    --accent: 240 5% 96%;
+    --accent-foreground: 240 6% 20%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 243 75% 52%;
+    --radius: 0.625rem;
+  }
+
+  * { box-sizing: border-box; border-color: var(--color-border); }
+  html { min-width: 320px; background: var(--color-canvas); }
+  body { margin: 0; min-width: 320px; min-height: 100dvh; background: var(--color-canvas); color: var(--color-text); font-family: 'Manrope', sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  button, input, textarea, select { font: inherit; }
+  button, select { cursor: pointer; }
+  button { color: inherit; }
+  button:disabled { cursor: wait; opacity: .65; }
+  button, a, input, textarea, select { outline: none; }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid oklch(0.75 0.11 254); outline-offset: 2px; }
+  h1, h2, h3, p { margin: 0; }
+  ::selection { background: var(--blue-100); color: var(--navy-950); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
